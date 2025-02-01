@@ -1,12 +1,13 @@
-import { type Config } from "drizzle-kit";
-
-import { env } from "~/env";
-
-export default {
+import { defineConfig } from "drizzle-kit";
+export default defineConfig({
+  dialect: "singlestore",
   schema: "./src/server/db/schema.ts",
-  dialect: "sqlite",
   dbCredentials: {
-    url: env.DATABASE_URL,
+    host: "svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com",
+    user: "netlify-deployment",
+    password: "8Z8rVRoTLlboP3RNDmEpFSryJIdgIbVH",
+    port: 3333,
+    database: "db_933ec",
+    ssl: {},
   },
-  tablesFilter: ["drive-tutorial_*"],
-} satisfies Config;
+});
