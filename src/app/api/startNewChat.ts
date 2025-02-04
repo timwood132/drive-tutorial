@@ -1,18 +1,20 @@
-import { chats_table } from "~/server/db/schema";
-import { v4 as uuidv4 } from "uuid";
-import { db } from "~/server/db";
+// "use server";
 
-export async function startNewChat() {
-  const chatId = uuidv4();
+// import { v4 as uuidv4 } from "uuid";
+// import { db } from "~/server/db";
+// import { chats_table } from "~/server/db/schema";
 
-  const initialMessages = [
-    { role: "system", content: "You are a helpful assistant." },
-  ];
+// export async function startNewChat(formData: FormData) {
+//   const message = formData.get("message");
+//   const chatId = uuidv4();
 
-  await db.insert(chats_table).values({
-    chat_id: chatId,
-    chat_data: initialMessages,
-  });
+//   const initialMessages = [
+//     { role: "system", content: "You are a helpful assistant." },
+//     { role: "user", content: message },
+//   ];
 
-  return chatId;
-}
+//   await db.insert(chats_table).values({
+//     chat_id: chatId,
+//     chat_data: initialMessages,
+//   });
+// }

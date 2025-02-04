@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ChatTest from "./components/ChatTest";
 
 export default function HomePage() {
   return (
@@ -30,6 +31,7 @@ export default function HomePage() {
               deploy it.
             </div>
           </Link>
+          <ChatTest />
         </div>
       </div>
     </main>

@@ -1,13 +1,14 @@
+import { config } from "dotenv";
 import { defineConfig } from "drizzle-kit";
+
+config({ path: ".env" });
+
 export default defineConfig({
-  dialect: "singlestore",
-  schema: "./src/server/db/schema.ts",
+  schema: "./src/db/schema.ts",
+  out: "./migrations",
+  dialect: "turso",
   dbCredentials: {
-    host: "svc-3482219c-a389-4079-b18b-d50662524e8a-shared-dml.aws-virginia-6.svc.singlestore.com",
-    user: "netlify-deployment",
-    password: "8Z8rVRoTLlboP3RNDmEpFSryJIdgIbVH",
-    port: 3333,
-    database: "db_933ec",
-    ssl: {},
+    url: process.env.TURSO_CONNECTION_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN!,
   },
 });
