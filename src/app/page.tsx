@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ChatTest from "./components/ChatTest";
+import UserTest from "./components/UserTest";
+import AuthTest from "./components/AuthTest";
 
 export default function HomePage() {
   return (
@@ -32,6 +34,8 @@ export default function HomePage() {
             </div>
           </Link>
           <ChatTest />
+          <UserTest />
+          <AuthTest />
         </div>
       </div>
     </main>

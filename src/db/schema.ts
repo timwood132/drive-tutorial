@@ -3,8 +3,9 @@ import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
 export const usersTable = sqliteTable("users", {
   id: integer("id").primaryKey(),
-  name: text("name").notNull(),
+  username: text("username").notNull(),
   email: text("email").unique().notNull(),
+  userId: text("user_id").unique().notNull(),
 });
 
 export const chatsTable = sqliteTable("chats", {
@@ -13,7 +14,7 @@ export const chatsTable = sqliteTable("chats", {
   content: text("content").notNull(),
   userId: integer("user_id")
     .notNull()
-    .references(() => usersTable.id, { onDelete: "cascade" }),
+    .references(() => usersTable.userId, { onDelete: "cascade" }),
   createdAt: text("created_at")
     .default(sql`(CURRENT_TIMESTAMP)`)
     .notNull(),

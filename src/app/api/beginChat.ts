@@ -22,15 +22,16 @@ type ChatCompletionRequest = {
 };
 
 export async function beginChat(_messages: Message[]): Promise<void> {
+  const messages: Message[] = [
+    { role: "system", content: "" },
+    {
+      role: "user",
+      content: "Can you explain the basics of machine learning?",
+    },
+  ];
+
   const requestBody: ChatCompletionRequest = {
-    messages: [
-      { role: "system", content: "" },
-      {
-        role: "user",
-        content: "Can you explain the basics of machine learning?",
-      },
-    ],
-    // messages,
+    messages,
     model: "gpt-4o",
     temperature: 1,
     max_tokens: 4096,
@@ -67,24 +68,37 @@ export async function beginChat(_messages: Message[]): Promise<void> {
     }>;
   }
 
+  let chat = "";
+
   for await (const event of sseStream) {
     const eventData =
       typeof event.data === "string"
         ? event.data
         : new TextDecoder().decode(event.data);
 
-    if (eventData === "[DONE]") return;
+    if (eventData === "[DONE]") {
+      messages.push({ role: "assistant", content: chat });
+      //   await db.insert(chatsTable).values({
+      //     title: "Chat Title",
+      //     content: "Chat Content",
+      //     userId: someUserId, // Replace with actual userId
+      //   });
+      return;
+    }
 
     try {
       const parsedData = JSON.parse(eventData) as StreamChatCompletion;
       for (const choice of parsedData.choices ?? []) {
         const content = choice.delta?.content ?? "";
+        chat = chat + content;
         process.stdout.write(content);
       }
     } catch (error) {
       console.error("Failed to parse event data:", error);
     }
   }
+
+  console.log(chat);
 
   //   if (response.status !== "200") {
   //     const errorResponse = response.body as ErrorResponse;
