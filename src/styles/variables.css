@@ -1,0 +1,43 @@
+:root {
+  /* Size */
+  --size-px-xxs: 4px;
+  --size-px-xs: 8px;
+  --size-px-sm: 12px;
+  --size-px-md: 16px;
+  --size-px-lg: 24px;
+  --size-px-xl: 32px;
+  --size-px-xxl: 40px;
+  --size-px-xxxl: 48px;
+  --size-px-huge: 56px;
+  --size-px-xhuge: 64px;
+  --size-px-xxhuge: 72px;
+  --size-px-xxxhuge: 80px;
+
+  --size-rem-xxxs: 0.5rem;
+  --size-rem-xxs: 0.625rem;
+  --size-rem-xs: 0.75rem;
+  --size-rem-sm: 0.875rem;
+  --size-rem-md: 1rem;
+  --size-rem-lg: 1.125rem;
+  --size-rem-xl: 1.25rem;
+  --size-rem-xxl: 1.5rem;
+  --size-rem-xxxl: 1.75rem;
+  --size-rem-huge: 2rem;
+  --size-rem-xhuge: 2.25rem;
+  --size-rem-xxhuge: 2.5rem;
+  --size-rem-xxxhuge: 2.75rem;
+  --size-rem-mega: 3.25rem;
+
+  /* Colors */
+  --color-gradPurple: rgba(166, 72, 246, 0.15);
+  --color-gradPink: rgba(228, 63, 154, 0.1);
+  --surface-defaults-surfacePrimary: #101828;
+  --surface-defaults-surfaceSecondary: #1d2939;
+
+  /* shadows */
+  --shadow-xs: 0px 0px 0px rgba(0, 0, 0, 0);
+  --shadow-sm: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 16px 32px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0px 24px 48px rgba(0, 0, 0, 0.1);
+}

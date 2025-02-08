@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
+import "~/styles/variables.css";
 
-import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import {
   ClerkProvider,
@@ -8,6 +8,9 @@ import {
   SignedOut,
   SignInButton,
 } from "@clerk/nextjs";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -20,7 +23,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable}`}>
+      <html lang="en" className={`${inter.variable} font-sans`}>
         <body>
           <SignedOut>
             <SignInButton />

@@ -33,3 +33,11 @@ Next Steps:
 [x] save first user to db
 [ ] save chat to db
 [ ] get chats from db
+
+doing components first:
+[x] background
+[x] typography headings
+[x] typography paragraph
+[x] typography label
+
+started icon button, but really it should be a variant of button

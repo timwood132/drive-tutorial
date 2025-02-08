@@ -1,0 +1,63 @@
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-rounded);
+  background-color: var(--surface-defaults-surfaceSecondary);
+  color: var(--color-gradPurple);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &.primary {
+    background-color: var(--color-gradPurple);
+    color: var(--surface-defaults-surfaceSecondary);
+
+    & path {
+      stroke: var(--surface-defaults-surfaceSecondary);
+    }
+  }
+
+  &.circular {
+    border-radius: 50%;
+  }
+
+  &.rounded {
+    border-radius: var(--size-px-xs);
+  }
+
+  &.size-xs {
+    height: var(--size-px-md);
+    width: var(--size-px-md);
+    &.rounded {
+      border-radius: var(--size-px-xxs);
+    }
+    & svg {
+      height: var(--size-px-sm);
+      width: var(--size-px-sm);
+    }
+  }
+  &.size-sm {
+    height: var(--size-px-lg);
+    width: var(--size-px-lg);
+    & svg {
+      height: var(--size-px-md);
+      width: var(--size-px-md);
+    }
+  }
+  &.size-md {
+    height: var(--size-px-xl);
+    width: var(--size-px-xl);
+    & svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  &.size-lg {
+    height: var(--size-px-xxl);
+    width: var(--size-px-xxl);
+    & svg {
+      height: var(--size-px-lg);
+      width: var(--size-px-lg);
+    }
+  }
+}

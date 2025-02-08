@@ -1,0 +1,31 @@
+.background {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: var(--surface-defaults-surfacePrimary);
+  z-index: -1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -40%;
+    width: 673px;
+    height: 673px;
+    transform: rotate(68.742deg);
+    filter: blur(150px);
+    background-color: var(--color-gradPurple);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -80%;
+    left: 0;
+    width: 841px;
+    height: 841px;
+    transform: rotate(68.742deg);
+    filter: blur(150px);
+    background-color: var(--color-gradPink);
+  }
+}
