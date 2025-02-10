@@ -40,4 +40,178 @@
   --shadow-md: 0px 8px 16px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0px 16px 32px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0px 24px 48px rgba(0, 0, 0, 0.1);
+
+  /* Surface Defaults */
+  --surface-primary: --color-white;
+  --surface-secondary: --color-neutral-100;
+  --surface-tertiary: --color-neutral-200;
+  --surface-overlay: --color-black-opacity-56;
+  --surface-primary-disabled: --color-black-opacity-8;
+  --surface-secondary-disabled: --color-black-opacity-4;
+  --surface-tertiary-disabled: --color-black-opacity-0;
+
+  /* Surface Opacities */
+  --surface-opacity-primary-98: #7a5af8fa;
+  --surface-opacity-primary-92: #7a5af8eb;
+  --surface-opacity-primary-84: #7a5af8d6;
+  --surface-opacity-primary-76: #7a5af8c2;
+  --surface-opacity-primary-68: #7a5af8ad;
+  --surface-opacity-primary-56: #7a5af88f;
+  --surface-opacity-primary-44: #7a5af870;
+  --surface-opacity-primary-24: #7a5af83d;
+  --surface-opacity-primary-16: #7a5af829;
+  --surface-opacity-primary-8: #7a5af814;
+  --surface-opacity-primary-4: #7a5af80a;
+  --surface-opacity-primary-2: #7a5af805;
+  --surface-opacity-black-base-98: --color-black-opacity-98;
+  --surface-opacity-black-base-92: --color-black-opacity-92;
+  --surface-opacity-black-base-84: --color-black-opacity-84;
+  --surface-opacity-black-base-76: --color-black-opacity-76;
+  --surface-opacity-black-base-68: --color-black-opacity-68;
+  --surface-opacity-black-base-56: --color-black-opacity-56;
+  --surface-opacity-black-base-44: --color-black-opacity-44;
+  --surface-opacity-black-base-24: --color-black-opacity-24;
+  --surface-opacity-black-base-16: --color-black-opacity-16;
+  --surface-opacity-black-base-8: --color-black-opacity-8;
+  --surface-opacity-black-base-4: --color-black-opacity-4;
+  --surface-opacity-black-base-2: --color-black-opacity-2;
+  --surface-opacity-black-base-0: --color-black-opacity-0;
+  --surface-opacity-white-base-98: --color-white-opacity-98;
+  --surface-opacity-white-base-92: --color-white-opacity-92;
+  --surface-opacity-white-base-84: --color-white-opacity-84;
+  --surface-opacity-white-base-76: --color-white-opacity-76;
+  --surface-opacity-white-base-68: --color-white-opacity-68;
+  --surface-opacity-white-base-56: --color-white-opacity-56;
+  --surface-opacity-white-base-44: --color-white-opacity-44;
+  --surface-opacity-white-base-24: --color-white-opacity-24;
+  --surface-opacity-white-base-16: --color-white-opacity-16;
+  --surface-opacity-white-base-8: --color-white-opacity-8;
+  --surface-opacity-white-base-4: --color-white-opacity-4;
+  --surface-opacity-white-base-2: --color-white-opacity-2;
+  --surface-opacity-white-base-0: --color-white-opacity-0;
+
+  /* Surface Input Controls */
+  --surface-input_control-default: --color-neutral-50;
+  --surface-input_control-primary-default: --color-purple-500;
+  --surface-input_control-primary-hover: --color-purple-400;
+  --surface-input_control-primary-focus: --color-purple-600;
+  --surface-input_control-primary-press: --color-purple-700;
+  --surface-input_control-default-disabled: --color-black-opacity-16;
+  --surface-input_control-hover-disabled: --color-black-opacity-16;
+  --surface-input_control-focus-disabled: --color-black-opacity-24;
+  --surface-input_control-press-disabled: --color-black-opacity-24;
+
+  /* Surface Interactive Primary */
+  --surface-primary-default-light: --color-purple-50;
+  --surface-primary-hover-light: --color-purple-100;
+  --surface-primary-focus-light: --color-purple-200;
+  --surface-primary-press-light: --color-purple-300;
+  --surface-primary-default-dark: --color-purple-500;
+  --surface-primary-hover-dark: --color-purple-600;
+  --surface-primary-focus-dark: --color-purple-700;
+  --surface-primary-press-dark: --color-purple-800;
+
+  /* Surface Interactive Secondary */
+  --surface-secondary-default: --color-black-opacity-4;
+  --surface-secondary-hover: --color-black-opacity-8;
+  --surface-secondary-focus: --color-black-opacity-8;
+  --surface-secondary-press: --color-purple-400;
+
+  /* Surface Interactive Tertiary */
+  --surface-tertiary-default: --color-black-opacity-0;
+  --surface-tertiary-hover: --color-black-opacity-2;
+  --surface-tertiary-focus: --color-black-opacity-4;
+  --surface-tertiary-press: --color-black-opacity-4;
+
+  /* Surface Interactive Success */
+  --surface-success-default-light: --color-green-50;
+  --surface-success-hover-light: --color-green-100;
+  --surface-success-focus-light: --color-green-200;
+  --surface-success-pressed-light: --color-green-300;
+  --surface-success-default-dark: --color-green-500;
+  --surface-success-hover-dark: --color-green-400;
+  --surface-success-focus-dark: --color-green-600;
+  --surface-success-pressed-dark: --color-green-700;
+
+  /* Surface Interactive Warning */
+  --surface-warning-default-light: --color-yellow-50;
+  --surface-warning-hover-light: --color-yellow-100;
+  --surface-warning-focus-light: --color-yellow-200;
+  --surface-warning-pressed-light: --color-yellow-300;
+  --surface-warning-default-dark: --color-yellow-500;
+  --surface-warning-hover-dark: --color-yellow-600;
+  --surface-warning-focus-dark: --color-yellow-700;
+  --surface-warning-pressed-dark: --color-yellow-800;
+
+  /* Surface Interactive Destructive */
+  --surface-destructive-default-light: --color-red-50;
+  --surface-destructive-hover-light: --color-red-100;
+  --surface-destructive-focus-light: --color-red-200;
+  --surface-destructive-pressed-light: --color-red-300;
+  --surface-destructive-default-dark: --color-red-500;
+  --surface-destructive-hover-dark: --color-red-400;
+  --surface-destructive-focus-dark: --color-red-600;
+  --surface-destructive-pressed-dark: --color-red-700;
+
+  /* Surface System */
+  --surface-system-info-light: --color-blue-100;
+  --surface-system-success-light: --color-green-100;
+  --surface-system-warning-light: --color-yellow-100;
+  --surface-system-danger-light: --color-red-100;
+  --surface-system-neutral-light: --color-neutral-100;
+  --surface-system-info-dark: --color-blue-500;
+  --surface-system-success-dark: --color-green-500;
+  --surface-system-warning-dark: --color-yellow-400;
+  --surface-system-destructive-dark: --color-red-500;
+  --surface-system-neutral-dark: --color-neutral-500;
+
+  /* Surface Accents */
+  --surface-accent-primary-lighter: --color-purple-50;
+  --surface-accent-primary-light: --color-purple-100;
+  --surface-accent-primary-default: --color-purple-500;
+  --surface-accent-primary-dark: --color-purple-600;
+  --surface-accent-primary-darker: --color-purple-700;
+  --surface-accent-pink: --color-pink-100;
+  --surface-accent-bluelight: --color-bluelight-100;
+  --surface-accent-rose: --color-rose-100;
+  --surface-accent-yellow: --color-yellow-400;
+  --surface-accent-neutral-light: --color-neutral-300;
+
+  /* Foreground Defaults */
+  --foreground-primary: --color-black-opacity-92;
+  --foreground-secondary: --color-black-opacity-76;
+  --foreground-tertiary: --color-black-opacity-68;
+  --foreground-placeholder: --color-black-opacity-44;
+  --foreground-caption: --color-black-opacity-32;
+  --foreground-disabled: --color-black-opacity-24;
+
+  /* Foreground Interactive */
+  --foreground-interactive-default: --color-purple-600;
+  --foreground-interactive-hover: --color-purple-500;
+  --foreground-interactive-focus: --color-purple-700;
+  --foreground-interactive-press: --color-purple-800;
+
+  /* Foreground Inverse */
+  --foreground-inverse-primary: --color-white-opacity-98;
+  --foreground-inverse-secondary: --color-white-opacity-92;
+  --foreground-inverse-tertiary: --color-white-opacity-84;
+
+  /* Foreground System */
+  --foreground-system-info: --color-blue-500;
+  --foreground-system-success: --color-green-500;
+  --foreground-system-warning: --color-yellow-500;
+  --foreground-system-destructive: --color-red-600;
+  --foreground-system-neutral: --color-neutral-600;
+
+  /* Foreground Accents */
+  --foreground-accent-primary-ligher: --color-purple-100;
+  --foreground-accent-primary-light: --color-purple-300;
+  --foreground-accent-primary-default: --color-purple-500;
+  --foreground-accent-primary-dark: --color-purple-600;
+  --foreground-accent-primary-darker: --color-purple-700;
+  --foreground-accent-pink: --color-pink-700;
+  --foreground-accent-bluelight: --color-bluelight-700;
+  --foreground-accent-rose: --color-rose-700;
+  --foreground-accent-yellow: --color-yellow-400;
+  --foreground-accent-neutral-light: --color-neutral-300;
 }

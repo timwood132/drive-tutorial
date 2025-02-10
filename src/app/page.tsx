@@ -1,5 +1,5 @@
 import Background from "./components/background/background";
-import IconButton from "./components/iconButton/IconButton";
+import Button from "./components/button/Button";
 import ArrowUp from "./components/icons/ArrowUp";
 import Heading from "./components/typography/heading/Heading";
 import Paragraph from "./components/typography/paragraph/Paragraph";
@@ -55,7 +55,14 @@ export default function HomePage() {
       </Heading>
       <Paragraph>Hello</Paragraph>
       <Paragraph weight="semibold">Hello</Paragraph>
-      <IconButton icon={<ArrowUp />} size="sm" radius="circular" />
+      <Button
+        iconLeft={<ArrowUp />}
+        iconRight={<ArrowUp />}
+        size="sm"
+        radius="circular"
+      >
+        <Paragraph size="sm">Hello</Paragraph>
+      </Button>
     </main>
   );
 }
