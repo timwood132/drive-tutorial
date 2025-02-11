@@ -3,7 +3,7 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
-  background-color: var(--surface-defaults-surfacePrimary);
+  background-color: var(--surface-defaults-primary);
   z-index: -1;
 
   &::before {
@@ -28,4 +28,11 @@
     filter: blur(150px);
     background-color: var(--color-gradPink);
   }
+}
+
+.light {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
 }

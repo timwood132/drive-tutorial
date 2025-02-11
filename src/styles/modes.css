@@ -1,0 +1,257 @@
+:root {
+  color-scheme: light dark;
+
+  /* Semantic Surface Colors */
+  --surface-defaults-primary: light-dark(
+    var(--color-base-white),
+    var(--color-neutral-900)
+  );
+  --surface-defaults-secondary: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-800)
+  );
+  --surface-defaults-tertiary: light-dark(
+    var(--color-neutral-200),
+    var(--color-neutral-700)
+  );
+  --surface-defaults-overlay: var(--color-base-black-opacity-56);
+
+  /* Interactive Surface Colors */
+  --surface-interactive-primary-default: light-dark(
+    var(--color-purple-50),
+    var(--color-purple-500)
+  );
+  --surface-interactive-primary-hover: light-dark(
+    var(--color-purple-100),
+    var(--color-purple-600)
+  );
+  --surface-interactive-primary-focus: light-dark(
+    var(--color-purple-200),
+    var(--color-purple-700)
+  );
+  --surface-interactive-primary-press: light-dark(
+    var(--color-purple-300),
+    var(--color-purple-800)
+  );
+
+  /* Input Control Surface Colors */
+  --surface-input-control-default: light-dark(
+    var(--color-neutral-50),
+    var(--color-neutral-600)
+  );
+  --surface-input-control-hover: var(--color-purple-300);
+  --surface-input-control-focus: var(--color-purple-400);
+  --surface-input-control-press: var(--color-purple-500);
+  --surface-input-control-disabled: light-dark(
+    var(--color-base-black-opacity-16),
+    var(--color-base-white-opacity-16)
+  );
+
+  /* System Surface Colors */
+  --surface-system-info: light-dark(
+    var(--color-blue-100),
+    var(--color-blue-500)
+  );
+  --surface-system-success: light-dark(
+    var(--color-green-100),
+    var(--color-green-500)
+  );
+  --surface-system-warning: light-dark(
+    var(--color-yellow-100),
+    var(--color-yellow-400)
+  );
+  --surface-system-danger: light-dark(
+    var(--color-red-100),
+    var(--color-red-500)
+  );
+  --surface-system-neutral: light-dark(
+    var(--color-neutral-100),
+    var(--color-neutral-500)
+  );
+
+  /* System Indicator Colors */
+  --surface-system-indicator-primary: var(--color-blue-500);
+  --surface-system-indicator-online: var(--color-green-500);
+  --surface-system-indicator-away: var(--color-yellow-500);
+  --surface-system-indicator-offline: var(--color-neutral-400);
+  --surface-system-indicator-notify: var(--color-red-500);
+
+  /* Foreground Colors */
+  --foreground-primary: light-dark(
+    var(--color-base-black-opacity-92),
+    var(--color-base-white-opacity-92)
+  );
+  --foreground-secondary: light-dark(
+    var(--color-base-black-opacity-76),
+    var(--color-base-white-opacity-76)
+  );
+  --foreground-tertiary: light-dark(
+    var(--color-base-black-opacity-68),
+    var(--color-base-white-opacity-68)
+  );
+  --foreground-placeholder: light-dark(
+    var(--color-base-black-opacity-44),
+    var(--color-base-white-opacity-44)
+  );
+  --foreground-caption: light-dark(
+    var(--color-base-black-opacity-32),
+    var(--color-base-white-opacity-44)
+  );
+  --foreground-disabled: light-dark(
+    var(--color-base-black-opacity-24),
+    var(--color-base-white-opacity-24)
+  );
+
+  /* Interactive Foreground Colors */
+  --foreground-interactive-default: light-dark(
+    var(--color-purple-600),
+    var(--color-purple-100)
+  );
+  --foreground-interactive-hover: light-dark(
+    var(--color-purple-500),
+    var(--color-purple-50)
+  );
+  --foreground-interactive-focus: light-dark(
+    var(--color-purple-700),
+    var(--color-purple-100)
+  );
+  --foreground-interactive-press: light-dark(
+    var(--color-purple-800),
+    var(--color-purple-200)
+  );
+
+  /* Border Colors */
+  --border-bounds: light-dark(
+    var(--color-base-black-opacity-16),
+    var(--color-base-white-opacity-16)
+  );
+  --border-divider: light-dark(
+    var(--color-base-black-opacity-16),
+    var(--color-base-white-opacity-16)
+  );
+  --border-disabled: light-dark(
+    var(--color-base-black-opacity-24),
+    var(--color-base-white-opacity-24)
+  );
+
+  /* Interactive Border Colors */
+  --border-interactive-default: light-dark(
+    var(--color-purple-500),
+    var(--color-purple-300)
+  );
+  --border-interactive-hover: light-dark(
+    var(--color-purple-400),
+    var(--color-purple-300)
+  );
+  --border-interactive-focus: light-dark(
+    var(--color-purple-600),
+    var(--color-purple-500)
+  );
+  --border-interactive-press: light-dark(
+    var(--color-purple-700),
+    var(--color-purple-600)
+  );
+
+  /* Accent Surface Colors */
+  --surface-accent-primary-lighter: light-dark(
+    var(--color-purple-50),
+    var(--color-purple-100)
+  );
+  --surface-accent-primary-light: light-dark(
+    var(--color-purple-100),
+    var(--color-purple-200)
+  );
+  --surface-accent-primary-default: light-dark(
+    var(--color-purple-500),
+    var(--color-purple-400)
+  );
+  --surface-accent-primary-dark: light-dark(
+    var(--color-purple-600),
+    var(--color-purple-500)
+  );
+  --surface-accent-primary-darker: light-dark(
+    var(--color-purple-700),
+    var(--color-purple-600)
+  );
+
+  /* Input Control Border Colors */
+  --border-input-control-default: light-dark(
+    var(--color-base-black-opacity-16),
+    var(--color-base-white-opacity-16)
+  );
+  --border-input-control-hover: light-dark(
+    var(--color-purple-300),
+    var(--color-purple-100)
+  );
+  --border-input-control-focus: light-dark(
+    var(--color-purple-400),
+    var(--color-purple-200)
+  );
+  --border-input-control-press: light-dark(
+    var(--color-purple-500),
+    var(--color-purple-300)
+  );
+  --border-input-control-active: light-dark(
+    var(--color-purple-600),
+    var(--color-purple-400)
+  );
+
+  /* Input Control Selected States */
+  --border-input-control-selected-default: var(--color-purple-300);
+  --border-input-control-selected-hover: var(--color-purple-400);
+  --border-input-control-selected-press: var(--color-purple-500);
+
+  /* System Border Colors */
+  --border-system-info: light-dark(
+    var(--color-blue-200),
+    var(--color-blue-500)
+  );
+  --border-system-success: light-dark(
+    var(--color-green-200),
+    var(--color-green-400)
+  );
+  --border-system-warning: light-dark(
+    var(--color-yellow-200),
+    var(--color-yellow-500)
+  );
+  --border-system-destructive: light-dark(
+    var(--color-red-200),
+    var(--color-red-500)
+  );
+  --border-system-neutral: light-dark(
+    var(--color-base-black-opacity-16),
+    var(--color-base-white-opacity-8)
+  );
+
+  /* System Foreground Colors */
+  --foreground-system-info: var(--color-blue-500);
+  --foreground-system-success: light-dark(
+    var(--color-green-500),
+    var(--color-green-600)
+  );
+  --foreground-system-warning: var(--color-yellow-500);
+  --foreground-system-destructive: light-dark(
+    var(--color-red-600),
+    var(--color-red-500)
+  );
+  --foreground-system-neutral: var(--color-neutral-600);
+
+  /* Accent Foreground Colors */
+  --foreground-accent-primary-lighter: var(--color-purple-100);
+  --foreground-accent-primary-light: light-dark(
+    var(--color-purple-300),
+    var(--color-purple-200)
+  );
+  --foreground-accent-primary-default: light-dark(
+    var(--color-purple-500),
+    var(--color-purple-300)
+  );
+  --foreground-accent-primary-dark: light-dark(
+    var(--color-purple-600),
+    var(--color-purple-500)
+  );
+  --foreground-accent-primary-darker: light-dark(
+    var(--color-purple-700),
+    var(--color-purple-600)
+  );
+}

@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
-import "~/styles/variables.css";
+import "~/styles/primitives.css";
+import "~/styles/modes.css";
 
 import { type Metadata } from "next";
 import {
