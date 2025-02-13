@@ -20,7 +20,7 @@ const Paragraph = ({
 }: Props) => {
   return (
     <p
-      className={`paragraph .lineHeight-paragraph weight-${weight} size-${size} ${preText ? "preText" : ""} ${underline ? "underline" : ""} ${italic ? "italic" : ""}`}
+      className={`paragraph lineHeight-paragraph weight-${weight} size-${size} ${preText ? "preText" : ""} ${underline ? "underline" : ""} ${italic ? "italic" : ""}`}
     >
       {children}
     </p>

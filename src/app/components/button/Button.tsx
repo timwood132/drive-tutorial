@@ -12,19 +12,18 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({
   className = "",
-  variant = "primary",
-  size = "md",
+  variant,
+  size,
   iconLeft = null,
   iconRight = null,
   radius = "rounded",
-  disabled,
   children,
   type = "button",
   ...props
 }: Props) => {
   return (
     <button
-      className={`iconButton ${variant} size-${size} ${radius} ${disabled ? "disabled" : ""} ${className}`}
+      className={`button ${variant} size-${size} ${radius} ${className}`}
       type={type}
       {...props}
     >
