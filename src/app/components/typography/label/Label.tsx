@@ -1,10 +1,11 @@
 import React from "react";
 import "../typography.css";
+import { sizeClasses, weightClasses } from "../utils";
 
 type Props = {
   children: React.ReactNode;
   weight?: "regular" | "semibold" | "bold";
-  size?: "xxs" | "xs" | "sm" | "md" | "lg";
+  size?: "3xs" | "2xs" | "xs" | "sm" | "md";
   underline?: boolean;
   italic?: boolean;
 };
@@ -18,7 +19,7 @@ const Label = ({
 }: Props) => {
   return (
     <p
-      className={`label weight-${weight} size-${size} ${underline ? "underline" : ""} ${italic ? "italic" : ""}`}
+      className={`${weightClasses[weight]} ${sizeClasses[size]} ${underline ? "underline" : ""} ${italic ? "italic" : ""}`}
     >
       {children}
     </p>

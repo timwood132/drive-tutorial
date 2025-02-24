@@ -6,6 +6,10 @@
     var(--color-base-white),
     var(--color-neutral-900)
   );
+  --surface-defaults-primary-disabled: light-dark(
+    var(--color-base-black-opacity-8),
+    var(--color-base-white-opacity-8)
+  );
   --surface-defaults-secondary: light-dark(
     var(--color-neutral-100),
     var(--color-neutral-800)

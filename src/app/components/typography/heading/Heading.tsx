@@ -1,6 +1,7 @@
 import type React from "react";
 import { createElement } from "react";
 import "../typography.css";
+import { weightClasses } from "../utils";
 
 type Props = {
   element?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
@@ -8,10 +9,21 @@ type Props = {
   children: React.ReactNode;
 };
 
+const sizeClasses = {
+  h1: "text-[2rem]",
+  h2: "text-2xl",
+  h3: "text-xl",
+  h4: "text-lg",
+  h5: "text-base",
+  h6: "text-sm",
+};
+
 const Heading = ({ element = "h1", weight = "regular", children }: Props) => {
   return createElement(
     element,
-    { className: `heading-${element} weight-${weight} lineHeight-heading` },
+    {
+      className: `${sizeClasses[element]} ${weightClasses[weight]} leading-[1.3]`,
+    },
     children,
   );
 };
