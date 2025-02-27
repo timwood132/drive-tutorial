@@ -5,23 +5,34 @@
 }
 
 .historyItem {
-  transition: background-color 0.2s ease;
+  --button-width: 0px;
+  transition: 200ms;
+  grid-template-columns: calc(100% - var(--button-width)) auto;
+
   &:hover {
+    --button-width: 36px;
     background-color: var(--surface-defaults-tertiary);
 
-    & p::before {
-      --gradTrans: var(--surface-defaults-tertiary);
+    & p {
+      &::before {
+        --gradTrans: var(--surface-defaults-tertiary);
+      }
+    }
+
+    & .historyItem__menuBtn {
+      background-color: var(--surface-defaults-tertiary);
     }
   }
 
   &:has(.historyItem__menuBtn:hover) {
     background-color: var(--surface-defaults-secondary);
-    & .paragraph::before {
+    & p::before {
       --gradTrans: var(--surface-defaults-secondary);
     }
   }
 
   & p {
+    transition: transform 0.2s ease;
     &::before {
       --gradTrans: var(--surface-defaults-secondary);
       transition: --gradTrans 0.2s ease;
