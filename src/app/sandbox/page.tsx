@@ -1,16 +1,13 @@
 "use client";
 import { useState } from "react";
-import Drawer from "../components/drawer/Drawer";
 import "../sandbox/sandbox.css";
-import EllipsisHorizontal from "../components/icons/EllipsisHorizontal";
-import Button from "../components/button/Button";
-import HistoryItem from "../components/historyItem/HistoryItem";
+import Logo2 from "../components/logo/Logo2";
 
 export default function Page() {
   const [open, setOpen] = useState(false);
   return (
-    <main className="flex h-screen">
-      <Drawer open={open}>
+    <main className="grid h-screen grid-cols-4 gap-1">
+      {/* <Drawer open={open}>
         <Button
           radius="rounded"
           size="sm"
@@ -36,7 +33,14 @@ export default function Page() {
           iconRight={<EllipsisHorizontal />}
           onClick={() => setOpen(!open)}
         />
+      </div> */}
+      <div className="bg-surface-primary col-span-3 flex items-center justify-center">
+        <Logo2 />
       </div>
+      <div className="bg-surface-primary"></div>
+      <div className="bg-surface-primary"></div>
+      <div className="bg-surface-primary col-span-2"></div>
+      <div className="bg-surface-primary"></div>
     </main>
   );
 }

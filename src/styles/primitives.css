@@ -256,4 +256,12 @@
   --drop-shadow-xl: 0px 7px 15px rgba(0, 0, 0, 0.05),
     0px 28px 28px rgba(0, 0, 0, 0.04), 0px 62px 37px rgba(0, 0, 0, 0.03),
     0px 110px 44px rgba(0, 0, 0, 0.01), 0px 173px 48px rgba(0, 0, 0, 0);
+
+  --brand-gradient: linear-gradient(
+    89.44deg,
+    #0489cc 3.14%,
+    #c73aff 34.33%,
+    #ff4340 65.51%,
+    #ff9040 94.33%
+  );
 }

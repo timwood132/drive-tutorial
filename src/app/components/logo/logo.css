@@ -1,0 +1,79 @@
+.logo {
+  position: relative;
+  clip-path: url(#clipPath);
+  display: flex;
+  aspect-ratio: 1;
+  height: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--brand-gradient);
+    background-size: 100%;
+    transform: scale(0);
+    border-radius: 50%;
+    filter: blur(200px);
+    transition:
+      filter 2.5s ease-out,
+      transform 1s ease-out;
+  }
+
+  &.intro::before {
+    transform: scale(1.05);
+    filter: blur(0px);
+  }
+}
+
+/*
+.logo {
+  position: relative;
+  clip-path: url(#clipPath);
+  display: flex;
+  aspect-ratio: 1;
+  height: 200px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--brand-gradient);
+    background-size: 100%;
+    transform: scale(0);
+    border-radius: 50%;
+    filter: blur(20px);
+    transition:
+      filter 2.5s ease 0.75s,
+      transform 1.5s ease 0.75s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    bottom: 50%;
+    left: 37.5%;
+    filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.8);
+    transform-origin: bottom center;
+    animation: spin 1s ease-in-out;
+  }
+
+  &.intro {
+    &::before {
+      transform: scale(1.05);
+      filter: blur(0px);
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
