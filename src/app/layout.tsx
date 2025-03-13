@@ -1,14 +1,10 @@
 import "~/styles/globals.css";
 import "~/styles/primitives.css";
 import "~/styles/modes.css";
+import "~/styles/styles.css";
 
 import { type Metadata } from "next";
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut,
-  SignInButton,
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -26,13 +22,13 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${inter.variable} font-sans`}>
         <body>
-          <SignedOut>
+          {/* <SignedOut>
             <SignInButton />
           </SignedOut>
-          <SignedIn>
-            {/* <UserButton /> */}
-            {children}
-          </SignedIn>
+          <SignedIn> */}
+          {/* <UserButton /> */}
+          {children}
+          {/* </SignedIn> */}
         </body>
       </html>
     </ClerkProvider>

@@ -1,6 +1,5 @@
 import EllipsisHorizontal from "../icons/EllipsisHorizontal";
 import Paragraph from "../typography/paragraph/Paragraph";
-import "./historyItem.css";
 
 type Props = {
   onClick: () => void;

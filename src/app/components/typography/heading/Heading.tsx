@@ -1,6 +1,5 @@
 import type React from "react";
 import { createElement } from "react";
-import "../typography.css";
 import { weightClasses } from "../utils";
 
 type Props = {

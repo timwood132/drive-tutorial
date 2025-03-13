@@ -176,6 +176,8 @@ export default {
         "surface-primary-disabled": "var(--surface-defaults-primary-disabled)",
         "surface-secondary": "var(--surface-defaults-secondary)",
         "surface-tertiary": "var(--surface-defaults-tertiary)",
+        "surface-tertiary-hover": "var(--surface-defaults-tertiary-hover)",
+        "surface-tertiary-focus": "var(--surface-defaults-tertiary-focus)",
         "surface-overlay": "var(--surface-defaults-overlay)",
 
         // Interactive Surface Colors

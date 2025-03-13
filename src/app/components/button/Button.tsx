@@ -1,5 +1,4 @@
 import React from "react";
-import "./button.css";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "tertiary" | "outlined";
@@ -26,15 +25,16 @@ const variantStyles: Record<NonNullable<Props["variant"]>, string> = {
   primary:
     "bg-surface-interactive-primary hover:bg-surface-interactive-primary-hover focus:bg-surface-interactive-primary-focus active:hover:bg-surface-interactive-primary-press disabled:bg-surface-primary-disabled text-white disabled:text-foreground-disabled",
   secondary: "bg-gray-200 text-gray-800",
-  tertiary: "bg-gray-100 text-gray-700",
+  tertiary:
+    "bg-transparent text-gray-700 hover:bg-surface-tertiary-hover focus:bg-surface-tertiary-focus disabled:bg-surface-tertiary-disabled",
   outlined: "border border-gray-500 text-gray-700 bg-transparent",
 };
 
 const sizeStyles: Record<NonNullable<Props["size"]>, string> = {
-  xs: "p-1 text-xs [&>svg]:h-4 [&>svg]:w-4",
-  sm: "p-2 text-sm [&>svg]:h-5 [&>svg]:w-5",
-  md: "p-2.5 text-base [&>svg]:h-6 [&>svg]:w-6",
-  lg: "p-3 text-lg [&>svg]:h-7 [&>svg]:w-7",
+  xs: "p-1 text-xs",
+  sm: "p-2 text-sm",
+  md: "p-2.5 text-base",
+  lg: "p-3 text-lg",
 };
 
 const radiusStyles: Record<NonNullable<Props["radius"]>, string> = {

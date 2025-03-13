@@ -1,5 +1,4 @@
 import React from "react";
-import "../typography.css";
 import { sizeClasses, weightClasses } from "../utils";
 
 type Props = {

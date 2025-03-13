@@ -3,7 +3,6 @@
   clip-path: url(#clipPath);
   display: flex;
   aspect-ratio: 1;
-  height: 200px;
 
   &::before {
     content: "";

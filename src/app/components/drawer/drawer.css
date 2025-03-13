@@ -1,0 +1,10 @@
+.drawer {
+  transition:
+    width 800ms cubic-bezier(0.21, 0.88, 0.4, 1.14),
+    opacity 500ms ease-out,
+    margin 500ms ease-out;
+  &.open {
+    opacity: 1;
+    width: 245px;
+  }
+}

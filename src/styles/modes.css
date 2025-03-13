@@ -18,6 +18,14 @@
     var(--color-neutral-200),
     var(--color-neutral-700)
   );
+  --surface-defaults-tertiary-hover: light-dark(
+    var(--color-base-black-opacity-2),
+    var(--color-base-white-opacity-4)
+  );
+  --surface-defaults-tertiary-focus: light-dark(
+    var(--color-base-black-opacity-4),
+    var(--color-base-white-opacity-8)
+  );
   --surface-defaults-overlay: var(--color-base-black-opacity-56);
 
   /* Interactive Surface Colors */
