@@ -6,9 +6,11 @@ import HistoryItem from "../components/historyItem/HistoryItem";
 import EllipsisHorizontal from "../components/icons/EllipsisHorizontal";
 import Logo2 from "../components/logo/Logo2";
 import Paragraph from "../components/typography/paragraph/Paragraph";
+import SearchInput from "../components/searchInput/SearchInput";
 
 export default function Page() {
   const [open, setOpen] = useState(false);
+  const [value, setValue] = useState("");
   return (
     <main className="column flex h-screen">
       {/* <DrawerControls open={open} setOpen={setOpen} /> */}
@@ -25,6 +27,13 @@ export default function Page() {
           <Paragraph size="md" weight="bold">
             Lumi
           </Paragraph>
+        </div>
+        <div className="mt-6 flex w-full flex-col gap-4">
+          <SearchInput
+            placeholderText="Search"
+            onChange={(e) => setValue(e.target.value)}
+            value={value}
+          />
         </div>
         <div className="mt-10 flex w-full flex-col gap-4">
           <HistoryItem onClick={() => console.log("clicked")} />
