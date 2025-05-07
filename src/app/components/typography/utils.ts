@@ -6,10 +6,10 @@ export const weightClasses = {
 };
 
 export const sizeClasses = {
-  "3xs": "text-[10px]", // Tailwind has no native `xxxs`
-  "2xs": "text-xs", // 12px
-  xs: "text-sm", // 14px
-  sm: "text-base", // 16px
-  md: "text-lg", // 18px
-  lg: "text-xl", // 20px
+  "3xs": "text-[10px]",
+  "2xs": "text-xs",
+  xs: "text-sm",
+  sm: "text-base",
+  md: "text-lg",
+  lg: "text-xl",
 };

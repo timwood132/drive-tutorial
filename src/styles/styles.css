@@ -3,6 +3,13 @@
   --transition-drawer: 800ms cubic-bezier(0.21, 0.88, 0.4, 1.14);
 }
 
+.ellipsis {
+  @apply text-ellipsis;
+  @apply overflow-hidden;
+  @apply whitespace-nowrap;
+  @apply w-full;
+}
+
 .background {
   position: absolute;
   overflow: hidden;

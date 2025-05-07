@@ -10,7 +10,7 @@ const Drawer = ({ children }: Props) => {
   const [open, setOpen] = useState(true);
   return (
     <section
-      className={`drawer relative ml-[-245px] mr-0 w-[245px] sm:my-4 sm:ml-4 sm:w-[78px] ${open ? "open ml-0" : ""} transition-all duration-[800ms] ease-[cubic-bezier(0.2,1.13,0.67,1.06)]`}
+      className={`drawer group relative ml-[-245px] mr-0 w-[245px] sm:my-4 sm:ml-4 sm:w-[78px] ${open ? "open ml-0" : ""} transition-all duration-[800ms] ease-[cubic-bezier(0.2,1.13,0.67,1.06)]`}
     >
       <DrawerControls open={open} setOpen={setOpen} />
       <div
